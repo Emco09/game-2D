@@ -10,7 +10,7 @@ dropdown.addEventListener('change',function(event){
 const canvas = document.getElementById('canvas1');
 //El método HTMLCanvasElement.getContext() retorna un contexto de dibujo en el lienzo, o null si el identificador del contexto no está soportado.
 const ctx = canvas.getContext('2d');
-//constante que define el tamaño del lienzo
+//constante que define el tamaño del lienzo (MAYUSCULAS variableglobal)
 const CANVAS_WIDTH = canvas.whidth = 600;
 const CANVAS_HEIGHT = canvas.height = 600;
 //const donde creamos una imagen 
