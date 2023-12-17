@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 const CANVAS_WIDTH = canvas.width = 800;
 const CANVAS_HEIGHT = canvas.heght = 700;
 //variable para poder controlar la velocidad 
-let gameSpeed = 1;
+let gameSpeed = 5;
 
 const backgroundLayer1 = new Image();
 backgroundLayer1.src = ('./backgroundLayers/layer-1.png');
@@ -16,8 +16,12 @@ backgroundLayer4.src = ('./backgroundLayers/layer-4.png');
 const backgroundLayer5 = new Image();
 backgroundLayer5.src = ('./backgroundLayers/layer-5.png');
 
-function animate(){
-    ctx.drawImage(backgroundLayer3,0,0);
+let x = 0
+//ctx.drawImage(image,sx,sy,sw,sh,dx,dy,dw,dh)
+function animate() {
+    ctx.clearRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT)
+    ctx.drawImage(backgroundLayer4, x, 0, );
+    x -= gameSpeed ;
     requestAnimationFrame(animate)
 }
 animate()
